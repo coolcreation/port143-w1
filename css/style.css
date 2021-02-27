@@ -1,0 +1,277 @@
+/*---------------------------------------------------------------------------------------------------------------
+  #Original Author:   Jeff Bohn 
+  #Date Created:   2/24/2021    
+  #Date Last Modified:                   
+               
+  #Modification log:  Create style.css               
+  ---------------------------------------------------------------------------------------------------------------*/
+
+
+body {
+  font-family: "Reggae One", Verdana, Arial, Helvetica, sans-serif !important;
+  font-size: 90%;
+  margin: 0;
+  background: #eee;
+  height: auto;
+}
+
+h1 { 
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+	margin-bottom: .5em;
+  text-transform: uppercase;
+  margin-left: .3em;
+  text-shadow: 2px 2px grey !important;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+h3 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin:.5em;
+  }
+
+
+main {
+  max-width: auto;
+  margin: 0;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+.container{
+  max-width: 100% !important;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.logo{
+  display: inline;
+  margin-left: 10vw;
+}
+.header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #1c1c1c;
+  color: #fff;
+}
+
+.header h2 {
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.logo{
+  margin-left: 3%;
+}
+/*____________START SECTIONS_____________*/
+
+.main1{
+  max-width: 85vw;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f3efe8;
+  text-shadow: 1px 1px white;
+  border: solid 3px black;
+  border-radius: 10px;
+  display: grid;
+  place-items: center; 
+}
+.main2{
+  max-width: auto;
+  margin-top: 5vh;
+  width: auto;
+}
+.main3{
+
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1em 2em;
+  max-height: auto;
+  margin-bottom: 4vh;
+}
+
+/*____________END SECTIONS_____________*/
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+span{
+  color:#f39c12;
+  text-shadow: 1px 1px black;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  background-color: #353a40;
+  color: white;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+footer p{
+    font-weight: 100;
+    font-size: 1.3rem;
+  }
+.fontColor{
+  color: white;
+}
+.share{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+footer a:hover {
+  color: yellow;
+  
+}
+
+#contact {
+  cursor: pointer;
+  text-decoration: none;
+}
+#contact a{
+  text-decoration: none;
+}
+#contact a:link {
+  color: #333;
+}
+
+#contact a:visited {
+  color: #333;
+}
+
+
+        
+        
+
+  /*_________LOGO SPIN__________*/
+
+  .logo:hover{
+    -webkit-animation: spin 5s infinite;
+     animation: spin 5s infinite;
+  }
+  
+  @-webkit-keyframes spin{
+    from {
+      -webkit-transform: rotateY(0deg);
+    }
+    to {
+      -webkit-transform: rotateY(-360deg);
+    }
+  }
+  
+  @keyframes spin{
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
+  }
+
+          
+          
+  
+  /*_____________________ DESKTOP__________________________*/
+
+@media screen and (min-width: 850px) {
+  h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0;
+  }
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+      -30px 0px 40px rgba(0, 0, 0, 0.1);
+  }
+  /*--start sections--*/
+  .main1{
+    display: flex;
+    max-width: 70vw;
+    margin-top: 3vh;
+    border-radius: 10px;
+}
+.main1 p{
+  font-size: 1.1em;
+}
+.main2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60vw;
+    margin-top: 7vh;
+    margin-bottom: 6vh;
+    margin-left: 4%;
+    border: none;
+    padding: 0;
+}
+
+.main3{
+    display: flex;
+    width: 60vw;
+    font-size: 1.1em;
+    border: none;
+    margin-left: 4%;
+}
+h2{
+    font-size: 1.4em;
+}
+footer {
+  max-width: 70vw;
+
+}
+.logo{
+  margin-left: 3%;
+}
+.container{
+  max-width: 71vw !important;
+}
+/*.me{
+  font-size: 77px;
+  color: blue;
+  text-shadow: 3px 3px black !important;
+  border: 3px blue solid;
+  border-radius: 50% 50%;
+  padding-top: 6px;
+  padding-bottom: 11px;
+  padding-right: 12px;
+  padding-left: 12px;
+} */
+}
